@@ -5,3 +5,8 @@ set smarttab
 set expandtab
 set number
 
+call plug#begin()
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+call plug#end()
+nmap <leader>p :GFiles<CR>
